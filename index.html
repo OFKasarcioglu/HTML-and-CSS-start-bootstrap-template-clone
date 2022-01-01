@@ -10,6 +10,7 @@
     />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="Ömer Faruk KASARCIOĞLU" />
+    <link rel="icon" href="images/favikon.png" type="image/x-icon" />
     <title>FREELANCER-STARTBOOTSTRAP TAMPLATE</title>
     <!--Yazdığım CSS Dosyası-->
     <link rel="stylesheet" href="style.css" />
@@ -42,16 +43,20 @@
         <div id="logo-kutusu">
           <a href="/" class="logo yazi-upperCase">Start Bootstrap</a>
         </div>
-        <div id="nav-urls">
+        <div id="nav-urls" class="Responsive">
           <ul>
+            <li class="navItem yazi-upperCase nav-ikon">
+              <a href="#" class="nav-url"><i class="fas fa-bars"></i></a>
+            </li>
+
             <li class="navItem yazi-upperCase">
-              <a href="#" class="nav-url">Portfolıo</a>
+              <a href="#Portfolio" class="nav-url">Portfolıo</a>
             </li>
             <li class="navItem yazi-upperCase">
-              <a href="#" class="nav-url">About Us</a>
+              <a href="#About" class="nav-url">About Us</a>
             </li>
             <li class="navItem yazi-upperCase">
-              <a href="#" class="nav-url">Contact</a>
+              <a href="#Contact" class="nav-url">Contact</a>
             </li>
           </ul>
         </div>
@@ -281,8 +286,14 @@
     </footer>
     <div class="CopyRight">
       <div class="container">
-        <small>Copyright © Your Website 2021</small>
+        <small>Copyright © KASARCIOĞLU 2021</small>
       </div>
     </div>
+    <!--JQUERY Cdn Link uzantısı-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="menu.js"></script>
   </body>
 </html>
