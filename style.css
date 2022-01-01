@@ -188,7 +188,7 @@ hr.DarkKucukYildiz {
 }
 
 .DarkKucukYildiz::after {
-  content: "\1F6E0";
+  content: "\2764";
   color: #2d3d4f;
   background-color: #fff;
 }
@@ -268,4 +268,33 @@ hr.DarkKucukYildiz {
 #AboutIcerik .textRight,
 .textLeft {
   font-size: 2rem;
+}
+/*Contact*/
+
+#Contact h2 {
+  font-size: 4.8rem;
+  color: #2c3e50;
+}
+#ContactForm{
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}
+.FormGrub{
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+}
+.FormGrub input, .FormGrub textarea{
+    border:none;
+    width: 100%;
+    display: block;
+    font-size: 2.4rem;
+}
+.FormGrub input:focus{
+    outline: 0;
+}
+
+.FormGrub textarea:focus{
+    outline: 0;
 }
