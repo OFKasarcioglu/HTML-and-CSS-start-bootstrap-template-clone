@@ -19,6 +19,46 @@ body {
   height: auto;
 }
 
+section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  text-align: center;
+}
+
+.Btn {
+  margin-top: 2rem;
+  font-size: 2rem;
+
+  font-weight: 400;
+  display: inline-block;
+  border-radius: 0.4rem;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.BtnCerceve:hover {
+  background-color: #fff;
+  color: #212529;
+}
+.BtnCerceve {
+  color: #fff;
+  border-color: #fff;
+  background-color: transparent;
+  padding: 2.2rem 1.6rem;
+}
+
+.BtnKutu {
+  color: #fff;
+  border-color: #1abc9c;
+  background-color: #1abc9c;
+  padding: 1.2rem 1rem;
+}
+
+.BtnKutu:hover {
+  border-color: #128f76;
+  background-color: #128f76;
+}
 h1,
 h2,
 h3,
@@ -155,10 +195,6 @@ hr.DarkKucukYildiz {
 
 /*PORTFOLIO*/
 #Portfolio {
-  height: 600px;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  text-align: center;
 }
 #Portfolio h2 {
   font-size: 4.8rem;
@@ -177,6 +213,7 @@ hr.DarkKucukYildiz {
 }
 .portfolioItem img {
   display: block;
+  border-radius: 13px;
 }
 .PhotoOverlay {
   position: absolute;
@@ -199,4 +236,36 @@ hr.DarkKucukYildiz {
 }
 .portfolioItem:hover .PhotoOverlay {
   opacity: 0.8;
+  border-radius: 13px;
+}
+
+/*About Us*/
+
+#About {
+  background-color: #1abc9b;
+  color: #fff;
+}
+#About h2 {
+  font-size: 4.8rem;
+}
+#AboutIcerik {
+  text-align: left;
+}
+#AboutIcerik .LeftIcerik {
+  float: left;
+  width: 50%;
+  padding-right: 2rem;
+  padding-left: 23rem;
+}
+
+#AboutIcerik .RightIcerik {
+  float: right;
+  width: 50%;
+  padding-right: 23rem;
+  padding-left: 2rem;
+}
+
+#AboutIcerik .textRight,
+.textLeft {
+  font-size: 2rem;
 }
