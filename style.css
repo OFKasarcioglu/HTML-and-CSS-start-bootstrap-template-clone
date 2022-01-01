@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 10px;
+  font-size: 6px;
 }
 body {
   font-family: "Lato", sans-serif;
@@ -79,12 +79,74 @@ h6 {
 }
 
 .container {
-  width: 1140px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+
+.kolon {
+  float: left;
+  width: 100%;
+  padding: 1rem;
+}
+
+/*Responsive Ayarlar*/
+
+@media (min-width: 567px) {
+  .container {
+    max-width: 540px;
+  }
+
+  html {
+    font-size: 7px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  html {
+    font-size: 8px;
+  }
+  .kolon {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  html {
+    font-size: 9px;
+  }
+  .kolon {
+    width: 33.333%;
+  }
+  #AboutIcerik .LeftIcerik {
+    float: left;
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 210px;
+  }
+
+  #AboutIcerik .RightIcerik {
+    float: right;
+    width: 50%;
+    padding-right: 210px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  html {
+    font-size: 10px;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -203,16 +265,10 @@ hr.DarkKucukYildiz {
 }
 
 /*PORTFOLIO*/
-#Portfolio {
-}
 #Portfolio h2 {
   font-size: 4.8rem;
 }
-.kolon {
-  float: left;
-  width: 33.333%;
-  padding: 10px;
-}
+
 .portfolioItem {
   position: relative;
 }
@@ -261,23 +317,24 @@ hr.DarkKucukYildiz {
   text-align: left;
 }
 #AboutIcerik .LeftIcerik {
-  float: left;
-  width: 50%;
-  padding-right: 2rem;
-  padding-left: 23rem;
+  float: none;
+  width: 100%;
+  padding-right: 5px;
+  padding-left: 25px;
 }
 
 #AboutIcerik .RightIcerik {
-  float: right;
-  width: 50%;
-  padding-right: 23rem;
-  padding-left: 2rem;
+  float: none;
+  width: 100%;
+  padding-right: 5px;
+  padding-left: 25px;
 }
 
 #AboutIcerik .textRight,
 .textLeft {
   font-size: 2rem;
 }
+
 /*Contact*/
 
 #Contact h2 {
@@ -334,4 +391,7 @@ footer li {
   padding-bottom: 2.4rem;
   color: #fff;
   text-align: center;
+}
+
+@media screen and(min-width:567px) {
 }
