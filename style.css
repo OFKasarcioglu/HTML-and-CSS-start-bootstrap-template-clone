@@ -34,8 +34,44 @@ nav {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+.BosElement::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#logo-kutusu {
+  float: left;
+  padding-top: 0.5rem;
+}
 #logo-kutusu .logo {
   color: #fff;
   font-weight: 700;
   font-size: 3.2rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#nav-urls {
+  float: right;
+}
+
+#nav-urls .navItem{
+    float: left;
+    margin: 0.5rem;
+}
+#nav-urls .nav-url{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: 0.1rem;
+      transition: color 0.4s ;
+}
+
+#nav-urls .nav-url:hover{
+
+    color: #1ABC9B;
 }
